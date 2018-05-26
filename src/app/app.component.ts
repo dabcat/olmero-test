@@ -3,6 +3,8 @@ import { ApiService } from './services/api.service';
 
 import { Observable } from 'rxjs/observable';
 
+import 'rxjs/add/operator/switchMap';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

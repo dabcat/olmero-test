@@ -1,5 +1,5 @@
 <div class="container">
   <div *ngFor="let item of data$ | async">
-    <span innerHtml="{{item | highlight: 'o,r'}}"></span>
+    <app-item [data]="item"></app-item>
   </div>
 </div>

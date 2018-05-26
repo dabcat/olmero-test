@@ -4,18 +4,21 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
+// modules 
+import { ItemModule } from './item/item.module';
+
 // services
 import { ApiService } from './services/api.service';
-import { HighlightPipe } from './pipes/highlight.pipe';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HighlightPipe
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    ItemModule
   ],
   providers: [
     ApiService
