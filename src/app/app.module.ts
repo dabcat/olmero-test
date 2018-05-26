@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 
 // services
 import { ApiService } from './services/api.service';
+import { HighlightPipe } from './pipes/highlight.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HighlightPipe
   ],
   imports: [
     BrowserModule,

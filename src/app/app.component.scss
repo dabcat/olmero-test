@@ -1,0 +1,19 @@
+.container {
+    display: block;
+    border: 1px dashed grey;
+}
+
+:host ::ng-deep {
+    .my-blue {
+        background-color: blue;
+        color: white;
+        font-size: 1.3rem;
+        padding: 3px;
+    }
+
+    .my-orange {
+        background-color: orange;
+        font-size: 1.3rem;
+        padding: 3px;
+    }
+}
