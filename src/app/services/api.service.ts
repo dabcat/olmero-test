@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 import { Observable } from 'rxjs/Rx';
 
@@ -7,8 +7,6 @@ import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/mergeMap';
 import 'rxjs/add/operator/filter';
-
-export const HEADER = {headers: new HttpHeaders({'Content-Type': 'text'})};
 
 @Injectable()
 export class ApiService {
